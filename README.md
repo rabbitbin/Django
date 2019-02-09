@@ -7,7 +7,7 @@ Each booking submit will be confirmed and showed on a new page. And the webiste 
 
 <h4>Relevant Frameworks/Modules/Plugins</h4>
 <ul>
-  <li>Django 2.1.4</li>
+  <li>Django 2.1.5</li>
   <li>Boostraps 4</li>
   <li>Leaflet JS</li>
   <li>Mapbox</li>
