@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<div class="container" id="menu">
+    <div class="row">
+        <h1 class="col-centered">Menu</h1>
+    </div>
+    <div class="row">
+        <div class="col-sm-10 col-centered">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header t-centered bg-black" id="headingOne">
+                        <h4 class="mb-0">
+                            <button class="btn btn-link btn-dark bg-black" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                STARTERS
+                            </button>
+                        </h4>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body t-centered">
+                            {{ object.Dish }}
+                            <h4>CRISPY SQUID</h4>
+                            <h5 class="cost">&#163; 7.80</h5>
+                            <p class="desc">Buttermilk batter, lemon & garlic mayo – always sustainably sourced</p>
+                        </div>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body t-centered">
+                            <h4>TRUFFLE TAGLIATELLE</h4>
+                            <h5 class="cost">&#163; 7.50</h5>
+                            <p class="desc">Freshly made pasta, Umbrian truffle, truffle cream & nutmeg</p>
+                        </div>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body t-centered">
+                            <h4>SALMON BRUSCHETTA</h4>
+                            <h5 class="cost">&#163; 6.80</h5>
+                            <p class="desc">Hot-smoked salmon, horseradish crème fraîche, lemon & bronze fennel</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header t-centered bg-black" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    MAINS
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body t-centered">
+                                <h4>CHICKEN AL MATTONE</h4>
+                                <h5 class="cost">&#163; 15.80</h5>
+                                <p class="desc">Marinated & grilled free-range chicken breast, walnut & black kale
+                                    pesto, rocket, lemon & your choice of side</p>
+                            </div>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body t-centered">
+                                <h4>JI BURGER</h4>
+                                <h5 class="cost">&#163; 12.80</h5>
+                                <p class="desc">Prime British beef in a brioche bun, sticky balsamic onions, tomato,
+                                    mostarda di Cremona burger sauce</p>
+                            </div>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body t-centered">
+                                <h4>SIRLOIN STEAK</h4>
+                                <h5 class="cost">&#163; 23.00</h5>
+                                <p class="desc">35-day dry-aged sirloin, rocket & your choice of side & sauce</p>
+                            </div>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body t-centered">
+                                <h4>VENETIAN TROUT</h4>
+                                <h5 class="cost">&#163; 15.50</h5>
+                                <p class="desc">Seared trout fillet with a delicate stew of mussels, cherry tomatoes &
+                                    black olives, topped with saffron aioli</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header t-centered bg-black" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree">
+                                    DESSERTS
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body t-centered">
+                                <h4>CLASSIC TIRAMISU</h4>
+                                <h5 class="cost">&#163; 6.50</h5>
+                                <p class="desc">Savoiardi biscuits drenched in boozy coffee & layered up with silky
+                                    mascarpone cream </p>
+                            </div>
+                            <div class="card-body t-centered">
+                                    <h4>RICH CHOCOLATE BROWNIE</h4>
+                                    <h5 class="cost">&#163; 6.20</h5>
+                                    <p class="desc">Chocolate sauce, salted caramel popcorn gelato & caramelised popcorn</p>
+                            </div>
+                            <div class="card-body t-centered">
+                                    <h4>BAKED LEMON & RICOTTA CHEESECAKE</h4>
+                                    <h5 class="cost">&#163; 6.50</h5>
+                                    <p class="desc">Oaty biscuit base & blueberry compote</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

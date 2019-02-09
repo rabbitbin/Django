@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container" id="contact">
+
+
+    <div class="row">
+        <div class="col-md-3 offset-md-1 t-centered">
+            <h2>Contact:</h2>
+            <h5>11-13 Exmouth Market <br>
+                London EC1R 4QD <br>
+                020 7833 8115
+            </h5>
+        </div>
+
+        <div class="col-md-7 col-centered" id="map">
+            <div id="mapid">
+
+                <script>
+                    var mymap = L.map('mapid').setView([51.525461, -0.109893], 13);
+                    var popup = L.popup()
+                        .setLatLng([51.525468, -0.110094])
+                        .setContent("Ciao Restaurant")
+                        .openOn(mymap);
+
+                    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+                        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                        maxZoom: 18,
+                        id: 'mapbox.streets',
+                        accessToken: 'pk.eyJ1IjoiYW1hbmRheXUiLCJhIjoiY2pwYmhyMGZzMm5uZTNwcGg2eDc5cmI4YyJ9.xPO_NSslGCvtLDWpjlWGnA'
+                    }).addTo(mymap);
+                </script>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+<!-- {% block extra_js %}
+
+
+
+{% endblock extra_js %} -->

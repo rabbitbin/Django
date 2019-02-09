@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container booking">
+    
+        <div class="col-md-8 col-centered">
+            <h1>Thank you for your reservation!</h1>
+            <h4>Here are your Booking Details:</h4>
+            <p> Date: {{object.date}}  <br>
+                Time: {{object.time}}  <br>
+                Person: {{object.person}} <br>
+                Name: {{object.name}}  <br>
+                E-mail: {{object.email}} <br>
+                Phone: {{object.phone}} <br>
+                Special Request: {{object.s_request}}<br>
+            </p>
+        </div>
+    
+</div>
+
+{% endblock %}
