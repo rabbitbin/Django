@@ -1,13 +1,13 @@
-<h2>Ciao Restaurant website with booking function with Django</h2>
+<h2>Ciao Restaurant website with Django</h2>
 
 <h4>Description</h4>
-This is a simple restaurant website with booking function which has connected to MySQL database. Customers can make reservation by choosing date, time and how many person 
+This is a simple restaurant website with booking system which has connected to MySQL database. Customers can make reservation by choosing date, time and how many person 
 together with their contact information with mobile and e-post which are mandatory. There is a optional field for special request. 
 Each booking submit will be confirmed and showed on a new page. And the webiste has also a simple map showing the location of the restaurant. 
 
 <h4>Relevant Frameworks/Modules/Plugins</h4>
 <ul>
-  <li>Django 2.1.5</li>
+  <li>Django 2.1.4</li>
   <li>Boostraps 4</li>
   <li>Leaflet JS</li>
   <li>Mapbox</li>
