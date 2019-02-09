@@ -14,15 +14,12 @@ Each booking submit will be confirmed and showed on a new page. And the webiste 
   <li>MySQL Workbrench</li>
 </ul> 
 
-  # Set up
-  Create virtual environment up an running.
-  Install Dependencies
-
-`pip install -r requirements.txt`
-  I used MySQL Workbrench. You will need to make changes to the setting.py file according to your database setting.
-  You can create superuser for admin page.
-  I have also a timezone setting to "CET" in setting.py
-  Migrate the database  
-  
-  `python manage.py migrate`
-  
+<h4>Set up</h4>
+<ol>
+  <li>Create virtual environment up an running.</li>
+  <li>Install dependencies <br> `pip install -r requirements.txt`</li>
+  <li>I used MySQL Workbrench. You will need to make changes to the setting.py file according to your database setting.</li>
+  <li>You can create superuser for admin page.</li>
+  <li>I have also a timezone setting to "CET" in setting.py</li>
+  <li>Migrate the database  `python manage.py migrate`</li>
+  </ol> 
