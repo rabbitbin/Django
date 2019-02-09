@@ -17,7 +17,7 @@ Each booking submit will be confirmed and showed on a new page. And the webiste 
 <h4>Set up</h4>
 <ol>
   <li>Create virtual environment up an running.</li>
-  <li>Install dependencies pip install -r requirements.txt</li>
+  <li>Install dependencies</li><br><p>pip install -r requirements.txt<p>
   <li>I used MySQL Workbrench. You will need to make changes to the setting.py file according to your database setting.</li>
   <li>You can create superuser for admin page.</li>
   <li>I have also a timezone setting to "CET" in setting.py</li>
